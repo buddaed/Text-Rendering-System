@@ -1,4 +1,4 @@
-#Text Rendering System
+# Text Rendering System
 A system capable of rendering any given string to screen
 
 uses data output from BMfont to build its internal representation
