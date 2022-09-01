@@ -8,7 +8,7 @@
 class Week2: public wolf::App
 {
 public:
-    Week2() : App("Week 6")
+    Week2() : App("TextRenderingSystem")
     {
         m_sampleRunner.addSample(new SampleTextRunner(this));
     }
