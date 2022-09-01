@@ -1,8 +1,54 @@
-# Text-Rendering-System
-A text rendering system that renders strings as textured quads on the screen on the screen. 
+# Install Instructions
 
-Given a tab delimited file of sentences and keywords (English and French only right now), the system will organize it internally and will be able to render the sentences on screen. 
+## Windows
 
-The system allows for left horizontal alignment (Default), centered horizontal alignment, and right horizontal alignment.
+### Setting up Dev Environment
 
-It also allows for top down vertical alignment (Default), centered vertical alignment, and bottom to top vertical alignment.
+If dev environment not set up yet from other samples or TechLab 2050, follow these steps:
+
+1) Install Visual Studio Community Edition 
+2) Install Visual Studio Code
+3) Install CMake
+4) Ensure CMake is on your PATH
+5) Install C/C++ VS Code Extension (0.28.3 or above)
+6) Install CMake Tools VS Code extension (version 1.4.1 or above)
+7) Install CMake VS Code extension (0.0.17 or above)
+8) Install TortoiseGit (or another Git client, but I'll assume tortoise git)
+
+### Building samples
+
+1) Clone or download this repository.
+2) Go into the folder in Explorer, right click and go to TortoiseGit->Submodule Update
+3) Open the folder in VS Code
+4) Ctrl+Shift+P then type/choose CMake: Configure
+5) Choose one of the available options (e.g. Visual Studio Community 2017 Release - amd64)
+5) Ctrl+Shift+P then type/choose CMake: Build
+6) Hit F5 to run in debugger if all compiled well
+7) You may need to choose "sample" from the dropdown the first time
+
+## Linux
+
+### Setting up Dev Environment
+
+If dev environment not set up yet from other samples or TechLab 2050, follow these steps:
+
+1) Install gcc or clang
+2) Install Visual Studio Code
+3) Install CMake
+4) Ensure CMake is on your PATH
+5) Install C/C++ VS Code Extension (0.28.3 or above)
+6) Install CMake Tools VS Code extension (version 1.4.1 or above)
+7) Install CMake VS Code extension (0.0.17 or above)
+8) Install git
+
+### Building samples
+
+1) Clone or download this repository.
+2) cd into the folder and run:
+```git submodule update --init```
+3) Open the folder in VS Code
+4) Ctrl+Shift+P then type/choose CMake: Configure
+5) Choose one of the available options (e.g. gcc)
+5) Ctrl+Shift+P then type/choose CMake: Build
+6) Hit F5 to run in debugger if all compiled well
+7) You may need to choose "sample" from the dropdown the first time
